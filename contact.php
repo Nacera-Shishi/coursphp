@@ -1,8 +1,8 @@
 
    <?php 
-   
+   $title = "Page Contact";
+   $nav = "Contact";
    require "hearder.php";
-
    ?>
     
 <h2>Nous contacter</h2>
