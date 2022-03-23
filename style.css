@@ -1,0 +1,25 @@
+
+
+form{
+    margin-left: 80vh;
+    height: 400px;
+    width: 400px;
+    background-color: bisque;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+form label{
+    padding-top: 50px;
+    text-transform: uppercase;
+    text-align: right;
+    vertical-align: middle;
+}
+.btn{
+    margin-left: 15px;
+    font-size: 15px;
+    color:white;
+    background-color: rgb(93, 135, 197);
+}
