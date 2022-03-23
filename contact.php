@@ -1,8 +1,10 @@
 
    <?php 
+   session_start();
    $title = "Page Contact";
    $nav = "Contact";
    require "hearder.php";
+   var_dump($_SESSION);
    ?>
     
 <h2>Nous contacter</h2>

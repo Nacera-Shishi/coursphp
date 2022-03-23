@@ -1,8 +1,9 @@
 
 
 <?php 
-  
+  session_start();
   $nav = "A propos";
+  session_unset();
   require "hearder.php";
    ?>
 
