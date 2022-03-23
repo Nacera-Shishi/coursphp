@@ -1,24 +1,29 @@
 <?php 
-
 $nav = "login";
 $title= "Login";
 $erreur= null;
 if (!empty($POST['Pseudo']) || !empty($_POST['password']) ) {
     if($_POST['Pseudo'] === "Cuicui" && $_POST['password'] === "12345"){
-        
+        session_start();
+        $_SESSION['connected'] = 1;
+        header('Location: dashboard.php');
+               
     }else{
         $erreur = "Identifiants incorrects !";
     }
 }
 require "hearder.php";
-if ($erreur) : ?>
-<div class="alert alert-danger">
-   <?php echo $erreur ?>
+if ($erreur) : 
+?>
+
+<div class="alert alert-danger">  
+   <?php echo $erreur; ?>
 </div>
 
-<?php endif;
-
+<?php 
+endif; 
 ?>
+
 <form action="login.php" method = "POST">
 
     <label for="Votre Nom "><strong> Votre Nom :</strong></label><br>

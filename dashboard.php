@@ -4,8 +4,9 @@
    $title = "Dashboard";
    require "functions/authentification.php";
    require "hearder.php";
+   
 ?>
-<h2>Bienvenue sur votre dashboard</h2>
+<h2>Bienvenue sur votre profil</h2>
 
 <?php 
    var_dump(is_connected());

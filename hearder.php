@@ -41,13 +41,20 @@
           <li class="nav-item <?php if ($nav === "Jeu du Hasard"): ?> active <?php endif ?>">
             <a class="nav-link" href="jeux_du_hasard.php">Jeu du Hasard</a>
           </li>
-          <li class="nav-item <?php if ($nav === "login"): ?> active <?php endif ?>">
-            <a class="nav-link" href="login.php">Login</a>
-          </li>
           <li class="nav-item <?php if ($nav === "Dashboard"): ?> active <?php endif ?>">
             <a class="nav-link" href="dashboard.php">Dashboard</a>
           </li>
         </ul>
+        <ul class="navbar-nav">
+           <li class="nav-item <?php if ($nav === "login"): ?> active <?php endif ?>">
+              <a class="nav-link" href="login">Login</a>
+           </li>
+            <li class="nav-item">
+            <a class="nav-link" href="logout">Logout</a>
+            </li>
+        </ul>
+
+
       </div>
     </nav>
 
