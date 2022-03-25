@@ -45,16 +45,20 @@
             <a class="nav-link" href="dashboard.php">Dashboard</a>
           </li>
         </ul>
+
         <ul class="navbar-nav">
+        <?php if (!is_connected()):?>
            <li class="nav-item <?php if ($nav === "login"): ?> active <?php endif ?>">
               <a class="nav-link" href="login">Login</a>
            </li>
+            <?php else : ?>
             <li class="nav-item">
             <a class="nav-link" href="logout">Logout</a>
             </li>
         </ul>
 
-
+<?php
+endif;?>
       </div>
     </nav>
 
