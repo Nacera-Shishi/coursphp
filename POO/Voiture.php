@@ -1,5 +1,10 @@
 <?php
-class NomDeLaClasse{
+class Voiture{
+
+   public string $couleur; 
+   public float  $poids; 
+   public int $prix;
+
 
 }
 
